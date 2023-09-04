@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ezil games</string>
+    <string name="non">Non</string>
+    <string name="oui">Oui</string>
+    <string name="exit">exit</string>
+    <string name="non_internet">Non Internet</string>
+</resources>

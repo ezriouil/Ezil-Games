@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_theme"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnExitOui"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/oui"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnExitNo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/red"
+        android:text="@string/non"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</LinearLayout>

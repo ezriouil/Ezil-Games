@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_bg"
+    android:gravity="center"
+    tools:context=".activities.SplashActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ezil Games"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:fontFamily="@font/rubik"
+        android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splashAnim"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/play" />
+
+    <ProgressBar
+        android:id="@+id/splashProgress"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashAnim"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminateTint="#000000"
+        android:indeterminate="true" />
+
+    <LinearLayout
+        android:id="@+id/networkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/splashProgress"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/non_internet"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_no_wifi" />
+    </LinearLayout>
+
+</RelativeLayout>
